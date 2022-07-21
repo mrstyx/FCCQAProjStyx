@@ -34,7 +34,7 @@ suite('Unit Tests', function () {
     // #5
     test('#equal, #notEqual', function () {
       assert.isEqual  (12, '12', 'Numbers are coerced into strings with ==');
-      assert.isEqual({ value: 1 }, { value: 1 }, '== compares object references');
+      assert.notEqual({ value: 1 }, { value: 1 }, '== compares object references');
       assert.isEqual(6 * '2', '12');
       assert.notEqual(6 + '2', '12');
     });
